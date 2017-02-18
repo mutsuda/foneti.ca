@@ -24,7 +24,6 @@
         <thead>
           <tr>
             <th>word</th>
-            <th>description</th>
           </tr>
         </thead>
         <tbody>
@@ -46,10 +45,9 @@
           var regex = new RegExp(search, 'i');
           var output;
           $.each(data, function(key, val){
-            if((val.word.search(regex) != -1) || (val.description.search(regex) != -1)) {
+            if(val.word.search(regex) != -1) {
               output += "<tr>";
               output += "<td id='"+key+"'>"+val.word+"</td>";
-              output += "<td id='"+key+"'>"+val.description+"</td>";
               output += "</tr>";
               console.info(output);
             }
