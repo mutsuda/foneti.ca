@@ -51,9 +51,12 @@
               output += "<td id='"+key+"'>"+val.word+"</td>";
               output += "<td id='"+key+"'>"+val.description+"</td>";
               output += "</tr>";
+              console.info(output);
             }
           });
           $('tbody').html(output);
+          console.info("hi");
+          console.info(output);
       });
     })
     </script>
