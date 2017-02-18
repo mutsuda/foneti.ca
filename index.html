@@ -43,7 +43,7 @@
           var search = $('#search').val();
           var regex = new RegExp(search, 'i');
           var output;
-          var counter = 500;
+          var counter = 100;
           $.each(data, function(key, val){
             if(val.word.search(regex) != -1 && counter > 0) {
               output += "<tr>";
