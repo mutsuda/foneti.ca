@@ -39,22 +39,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
       $('#search').keydown(function(){
-        console.info("keydown");
         $.getJSON("data.json",function(data){
           var search = $('#search').val();
           var regex = new RegExp(search, 'i');
           var output;
+          var counter = 500;
           $.each(data, function(key, val){
-            if(val.word.search(regex) != -1) {
+            if(val.word.search(regex) != -1 && counter > 0) {
               output += "<tr>";
               output += "<td id='"+key+"'>"+val.word+"</td>";
               output += "</tr>";
-              console.info(output);
+              counter -= 1;
             }
           });
           $('tbody').html(output);
-          console.info("hi");
-          console.info(output);
       });
     })
     </script>
