@@ -32,22 +32,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-      $('#search').keydown(function(){
-        $.getJSON("data.json",function(data){
-          var search = $('#search').val();
-          var regex = new RegExp(search, 'i');
-          var output;
-          $.each(data, function(key, val){
-            if(val.word.search(regex) != -1) {
-              output += "<tr>";
-              output += "<td id='"+key+"'>"+val.word+"</td>";
-              output += "</tr>";
-            }
-          });
-          $('tbody').html(output);
-      });
-    })
-    </script>
+    <script src="scripts/functions.js"></script>
   </body>
 </html>
