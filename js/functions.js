@@ -14,7 +14,7 @@ $('#bsearch').keydown(function(){
   });
 })
 
-$('button').click(function(){
+$('.btn-group button').click(function(){
   current_value = document.getElementById("search").value;
   document.getElementById("search").value = current_value + $(this).text();
 })
