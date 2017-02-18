@@ -14,9 +14,9 @@ $('#search').keydown(function(){
   });
 })
 
-$('#button').click(function(){
-
-  console.info("clicked");
+$('button').click(function(){
+  current_value = document.getElementById("search").value;
+  document.getElementById("search").value = current_value + $(this).text();
 })
 
 
