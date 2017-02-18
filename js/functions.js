@@ -1,4 +1,4 @@
-$('#bsearch').keydown(function(){
+$('#bsearch').click(function(){
   $.getJSON("data.json",function(data){
   var search = $('#search').val();
   var regex = new RegExp(search, 'i');
