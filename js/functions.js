@@ -14,7 +14,7 @@ $('#search').keydown(function(){
   });
 })
 
-$('#btn btn-default').click(function(){
+$('#button').click(function(){
 
   console.info("clicked");
 })
