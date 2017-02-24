@@ -1,0 +1,99 @@
+div{
+ /*border: solid 1px red;*/
+}
+
+*{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  box-sizing: border-box;
+
+
+}
+
+
+body{
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+}
+
+main{
+
+}
+
+h1{ font-size: 35px;
+    margin: 160px 15% 50px 15%;
+    color: white;
+    font-weight: 700;
+}
+
+.searchbox{
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  color: white;
+  display: flex;
+  padding: 10px 15% ;
+}
+
+input[type="text"] {
+  height: 60px;
+  font-size: 35px;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 7px 0px;
+  background: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+
+}
+.teclat{
+  width: 70%;
+  margin: auto;
+
+
+}
+
+button{
+  background-color: black;
+  opacity: 0.6;
+  border: none;
+  font-size: 25px;
+  color: white;
+  margin: 10px 0px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover {
+  opacity: 1;
+
+}
+
+.results{
+  display: none;
+  width: 70%;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+table{
+  min-width: 190px;
+}
+
+table,tr,td{
+  background-color: white;
+  font-size: 20px;
+  line-height: 35px;
+  border: 1px solid black;
+  margin-right: 20px;
+}
+
+td{
+  padding: 4px 10px;
+  width: 100%;
+}
