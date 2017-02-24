@@ -6,31 +6,32 @@ div{
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   box-sizing: border-box;
-
-
 }
-
 
 body{
   background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-
-
 }
 
-main{
-
-}
-
-h1{ font-size: 35px;
+.title{
+    font-size: 35px;
     margin: 160px 15% 50px 15%;
     color: white;
     font-weight: 700;
+    font-family: 'Playfair Display', serif;
 }
 
-.searchbox{
+
+h1{
+    font-size: 35px;
+    margin: 160px 15% 50px 15%;
+    color: white;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.input-group{
   background-color: black;
   opacity: 0.6;
   width: 100%;
@@ -41,7 +42,7 @@ h1{ font-size: 35px;
 
 input[type="text"] {
   height: 60px;
-  font-size: 35px;
+  font-size: 30px;
   border: none;
   outline: none;
   color: #555;
@@ -51,11 +52,9 @@ input[type="text"] {
   font-weight: 400;
 
 }
-.teclat{
+.btn-toolbar{
   width: 70%;
   margin: auto;
-
-
 }
 
 button{
@@ -71,7 +70,6 @@ button{
 
 button:hover {
   opacity: 1;
-
 }
 
 .results{
@@ -97,3 +95,4 @@ td{
   padding: 4px 10px;
   width: 100%;
 }
+
